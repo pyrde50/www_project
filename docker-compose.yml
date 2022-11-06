@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+  web:
+    build: .
+    image: pyrde/project
+    restart: 'no'
+    volumes: 
+    - ./web:/index
+    ports:
+      - "7777:7777"
+      - "7778:7778"
